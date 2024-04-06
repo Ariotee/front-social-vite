@@ -1,0 +1,16 @@
+.root {
+	padding: 5px 10px;
+
+	width: 80%;
+	color: #c1c1c1;
+	font-size: 18px;
+
+	outline: none;
+	background: none;
+	border: none;
+}
+
+.root::placeholder {
+	font-size: 18px;
+	color: #c1c1c1;
+}
