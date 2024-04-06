@@ -1,0 +1,80 @@
+.root {
+	padding: 20px;
+	background-color: #292929;
+	border-radius: 8px;
+	border: solid 1px #454545;
+	margin-left: 20px;
+
+	.avatar {
+		border-radius: 8px;
+		overflow: hidden;
+
+		&__img {
+			height: 210px;
+			width: 220px;
+		}
+	}
+
+	.action {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+
+		.addFriend {
+			display: flex;
+			align-items: center;
+
+			border-radius: 8px;
+			padding: 5px 7px;
+			background-color: #373737;
+			outline: none;
+			border: none;
+
+			&__icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 10px;
+			}
+
+			&__text {
+				color: #fff;
+				font-size: 17px;
+			}
+		}
+
+		.more {
+			display: flex;
+			align-items: center;
+
+			border-radius: 8px;
+			padding: 5px 7px;
+			background-color: #373737;
+			outline: none;
+			border: none;
+
+			&__icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.editProfile {
+			display: flex;
+			align-items: center;
+
+			border-radius: 8px;
+			padding: 5px 7px;
+			background-color: #373737;
+			outline: none;
+			border: none;
+
+			&__icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
