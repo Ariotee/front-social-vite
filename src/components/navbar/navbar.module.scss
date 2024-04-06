@@ -1,0 +1,93 @@
+.root {
+	padding: 10px 0;
+	background-color: #292929;
+	box-shadow: 0 5px 10px rgb(71, 71, 71);
+
+	.container {
+		max-width: 1300px;
+		margin: 0 auto;
+		padding: 0 10px;
+		.flex {
+			display: flex;
+			justify-content: space-between;
+
+			.logo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				&__SVG {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				&__Text {
+					padding: 0 10px;
+					color: #fff;
+					font-size: 21px;
+				}
+			}
+
+			.form {
+				display: flex;
+				align-items: center;
+				flex: 1 1 auto;
+				margin: 0 20px;
+
+				.bg {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0 5px;
+					height: 35px;
+
+					border-radius: 10px;
+					background-color: #525252;
+					.label {
+						display: none;
+					}
+
+					.input_body {
+						display: flex;
+						align-items: center;
+					}
+				}
+			}
+
+			.avatar {
+				.avatarBtn {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: 0;
+					width: 50px;
+					height: 50px;
+
+					border-radius: 50%;
+					border: none;
+					overflow: hidden;
+					.avatarImg {
+						border-radius: 50%;
+						width: 70px;
+						height: 50px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//@media (min-width: 1000px) {
+//	.container {
+//		max-width: 1300px;
+//		margin: 0 auto;
+//		padding: 0 10px;
+//	}
+//}
+
+//@media (min-width: 700px) {
+//	.container {
+//		max-width: 1200px;
+//		margin: 0 auto;
+//	}
+//}
