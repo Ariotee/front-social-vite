@@ -1,10 +1,9 @@
 .root {
 	padding: 10px 0;
 	background-color: #292929;
-	box-shadow: 0 5px 10px rgb(71, 71, 71);
 
 	.container {
-		max-width: 1300px;
+		max-width: 1100px;
 		margin: 0 auto;
 		padding: 0 10px;
 		.flex {
@@ -32,7 +31,7 @@
 				display: flex;
 				align-items: center;
 				flex: 1 1 auto;
-				margin: 0 20px;
+				margin-left: 23px;
 
 				.bg {
 					display: flex;

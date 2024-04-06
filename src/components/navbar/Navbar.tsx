@@ -1,9 +1,8 @@
 import React from 'react';
 
 import style from './navbar.module.scss';
-import Logotype from './icons/Logotype';
-import Search from './icons/Search';
 import Input from '../input/Input';
+import { Logotype, Search } from './Icons';
 
 import AvatarMe from '../../assets/avatarMe.jpg';
 
@@ -34,15 +33,6 @@ const Navbar: React.FC = () => {
 							<img src={AvatarMe} alt='My avatar' className={style.avatarImg} />
 						</button>
 					</div>
-
-					{/*<nav className={style.nav}>
-						<ul className={style.nav__list}>
-							<li className={style.item}></li>
-							<li className={style.item}></li>
-							<li className={style.item}></li>
-							<li className={style.item}></li>
-						</ul>
-					</nav>*/}
 				</div>
 			</div>
 		</div>
