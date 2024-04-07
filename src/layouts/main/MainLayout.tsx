@@ -1,13 +1,20 @@
 import React from 'react';
 
+import { Outlet } from 'react-router-dom';
+
 import Header from '../../components/header/Header';
-import Home from '../../pages/home/Home';
+import { LeftSideMenu } from '../../components/sidebar/Sidebar';
+
+import style from './mainlayout.module.scss';
 
 const MainLayout: React.FC = () => {
 	return (
 		<div className='wrapper'>
 			<Header />
-			<Home />
+			<div className={style.container_home}>
+				<LeftSideMenu />
+				<Outlet />
+			</div>
 		</div>
 	);
 };
