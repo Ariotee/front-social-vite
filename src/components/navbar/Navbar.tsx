@@ -2,11 +2,12 @@ import React from 'react';
 
 import style from './navbar.module.scss';
 import Input from '../input/Input';
-import { Logotype, Search } from './Icons';
-
-import AvatarMe from '../../assets/avatarMe.jpg';
+import { Clear, Logotype, Search } from './Icons';
+import Avatar from '../avatar/Avatar';
 
 const Navbar: React.FC = () => {
+	const [value, setValue] = React.useState('');
+
 	return (
 		<div className={style.root}>
 			<div className={style.container}>
@@ -23,15 +24,14 @@ const Navbar: React.FC = () => {
 							<label className={style.label}>Search</label>
 							<div className={style.input_body}>
 								<Search />
-								<Input />
+								<Input value={value} setValue={setValue} />
+								{value && <Clear value={value} setValue={setValue} />}
 							</div>
 						</div>
 					</form>
 
 					<div className={style.avatar}>
-						<button className={style.avatarBtn}>
-							<img src={AvatarMe} alt='My avatar' className={style.avatarImg} />
-						</button>
+						<Avatar />
 					</div>
 				</div>
 			</div>
