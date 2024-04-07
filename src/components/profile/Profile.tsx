@@ -7,12 +7,10 @@ import style from './profile.module.scss';
 
 const MyProfile: React.FC = () => {
 	return (
-		<>
-			<div className={style.flex}>
-				<ProfileHeader />
-				<ProfileHeaderInfo />
-			</div>
-		</>
+		<div className={style.flex}>
+			<ProfileHeader />
+			<ProfileHeaderInfo />
+		</div>
 	);
 };
 
