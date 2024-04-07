@@ -3,6 +3,7 @@ import React from 'react';
 import { Friends, Messenger, Music, MyProfile, News } from './Icons';
 
 import style from './sidebar.module.scss';
+import { Link } from 'react-router-dom';
 
 export const LeftSideMenu: React.FC = () => {
 	return (
@@ -13,41 +14,41 @@ export const LeftSideMenu: React.FC = () => {
 						<span className={style.item__icon}>
 							<MyProfile />
 						</span>
-						<a href='#' className={style.item__link}>
+						<Link to={'/myprofile'} className={style.item__link}>
 							My profile
-						</a>
+						</Link>
 					</li>
 					<li className={style.item}>
 						<span className={style.item__icon}>
 							<News />
 						</span>
-						<a href='#' className={style.item__link}>
+						<Link to={'/news'} className={style.item__link}>
 							News
-						</a>
+						</Link>
 					</li>
 					<li className={style.item}>
 						<span className={style.item__icon}>
 							<Messenger />
 						</span>
-						<a href='#' className={style.item__link}>
+						<Link to={'/messenger'} className={style.item__link}>
 							Messenger
-						</a>
+						</Link>
 					</li>
 					<li className={style.item}>
 						<span className={style.item__icon}>
 							<Friends />
 						</span>
-						<a href='#' className={style.item__link}>
+						<Link to={'/friends'} className={style.item__link}>
 							Friends
-						</a>
+						</Link>
 					</li>
 					<li className={style.item}>
 						<span className={style.item__icon}>
 							<Music />
 						</span>
-						<a href='#' className={style.item__link}>
+						<Link to={'/music'} className={style.item__link}>
 							Music
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>
