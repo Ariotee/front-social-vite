@@ -1,0 +1,113 @@
+.root {
+	margin-top: 10px;
+	background-color: #292929;
+	border: solid 1px #454545;
+	border-radius: 8px;
+
+	.block {
+		padding: 20px;
+		.user {
+			display: flex;
+			align-items: center;
+			&__avatar {
+				margin-right: 10px;
+			}
+			.info {
+				&__name {
+					color: #fff;
+					font-size: 15px;
+				}
+				&_date {
+					margin-top: 3px;
+					font-size: 12px;
+					color: #8b8b8b;
+				}
+			}
+		}
+
+		.content_post {
+			max-width: 580px;
+			.post_text {
+				line-height: 1.462;
+				font-size: 15px;
+				color: #fff;
+				padding-right: 10px;
+			}
+		}
+
+		.ability {
+			display: flex;
+			gap: 10px;
+			&_like {
+				.like_btn {
+					padding: 4px 10px;
+					display: flex;
+					align-items: center;
+					border: none;
+					border-radius: 15px;
+					background-color: #454545;
+					outline: none;
+					&_icon {
+						width: 24px;
+						height: 24px;
+					}
+					&_count {
+						color: #8b8b8b;
+						font-size: 14px;
+						margin-left: 4px;
+					}
+				}
+			}
+
+			&_comment {
+				display: flex;
+				.comment_btn {
+					padding: 2px 10px;
+					display: flex;
+					align-items: center;
+					border: none;
+					border-radius: 15px;
+					background-color: #454545;
+					outline: none;
+					&_icon {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 24px;
+						height: 24px;
+					}
+					&_count {
+						color: #8b8b8b;
+						font-size: 14px;
+						margin-left: 4px;
+					}
+				}
+			}
+
+			&_share {
+				display: flex;
+				.share_btn {
+					padding: 2px 10px;
+					display: flex;
+					align-items: center;
+					border: none;
+					border-radius: 15px;
+					background-color: #454545;
+					outline: none;
+					&_icon {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 24px;
+						height: 24px;
+					}
+					&_count {
+						color: #8b8b8b;
+						font-size: 14px;
+						margin-left: 4px;
+					}
+				}
+			}
+		}
+	}
+}
