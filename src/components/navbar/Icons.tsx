@@ -1,3 +1,6 @@
+import React from 'react';
+import { IPropsInput } from '../input/types';
+
 export const Logotype = () => {
 	return (
 		<svg
@@ -48,6 +51,32 @@ export const Search = () => {
 						d='M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z'
 						fill='#fff'
 					></path>
+				</g>
+			</g>
+		</svg>
+	);
+};
+
+export const Clear: React.FC<IPropsInput> = ({ setValue }) => {
+	const onClickClear = () => {
+		setValue('');
+	};
+
+	return (
+		<svg
+			width='24px'
+			height='24px'
+			viewBox='0 0 512 512'
+			fill='#fff'
+			onClick={onClickClear}
+			style={{ cursor: 'pointer' }}
+		>
+			<g strokeLinecap='round' strokeLinejoin='round'></g>
+			<g>
+				<g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
+					<g fill='#fff' transform='translate(91.520000, 91.520000)'>
+						<polygon points='328.96 30.2933333 298.666667 1.42108547e-14 164.48 134.4 30.2933333 1.42108547e-14 1.42108547e-14 30.2933333 134.4 164.48 1.42108547e-14 298.666667 30.2933333 328.96 164.48 194.56 298.666667 328.96 328.96 298.666667 194.56 164.48'></polygon>
+					</g>
 				</g>
 			</g>
 		</svg>
