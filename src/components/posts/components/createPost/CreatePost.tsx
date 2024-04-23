@@ -1,13 +1,31 @@
 import React from 'react';
 
-import style from './style.module.scss';
+import axios from 'axios';
+
 import { UploadMusic, UploadPhoto, UploadVideo } from '../Icons';
+//import { IPost } from '../../../../redux/posts/types';
+
+import style from './style.module.scss';
 
 const CreatePost: React.FC = () => {
 	const [contentPost, setContentPost] = React.useState('');
+	//const [newPost, setNewPost] = React.useState<IPost>();
+	//const [createdPost, setCreatedPost] = React.useState([]);
 
 	const onChangeCreateInput = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setContentPost(event.target.value);
+	};
+
+	const onClickCreatePost = () => {
+		const newPostObject = {
+			text: contentPost,
+		};
+
+		axios.post('https://5a50e665751f198f.mokky.dev/posts', newPostObject).catch(error => {
+			console.error(error);
+		});
+
+		setContentPost('');
 	};
 
 	return (
@@ -23,7 +41,11 @@ const CreatePost: React.FC = () => {
 				/>
 				<div className={style.upload_btns}>
 					{contentPost && (
-						<button type='submit' className={style.btn_submit}>
+						<button
+							onClick={onClickCreatePost}
+							type='submit'
+							className={style.btn_submit}
+						>
 							Create
 						</button>
 					)}

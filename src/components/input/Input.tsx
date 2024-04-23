@@ -5,7 +5,10 @@ import { IPropsInput } from './types';
 
 const Input: React.FC<IPropsInput> = ({ value, setValue }) => {
 	const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setValue(event.target.value);
+		const inputValue = event.target.value;
+		setValue(inputValue);
+		//const inputTrim = event.target.value.replace(/\s+/g, ''); //удаление всех пробелов
+		//console.log(inputTrim);
 	};
 
 	return (

@@ -1,10 +1,12 @@
 import React from 'react';
 
-import style from './style.module.scss';
-import Avatar from '../../../avatar/Avatar';
 import { Comment, Like, Share } from '../Icons';
 
-const PostItem: React.FC = () => {
+import Avatar from '../../../avatar/Avatar';
+import style from './style.module.scss';
+import { IPost } from '../../../../redux/posts/types';
+
+const PostItem: React.FC<IPost> = ({ text }) => {
 	return (
 		<div className={style.root}>
 			<div className={style.block}>
@@ -23,9 +25,7 @@ const PostItem: React.FC = () => {
 				</div>
 
 				<div className={style.content_post}>
-					<p className={style.post_text}>
-						"..душа - это сущность самой жизни." <br />© Унылый Солден
-					</p>
+					<p className={style.post_text}>{text}</p>
 				</div>
 
 				<div className={style.ability}>

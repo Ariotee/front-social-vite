@@ -37,6 +37,8 @@ template {
 }
 a {
 	background: transparent;
+	text-decoration: none;
+	color: white;
 }
 a:active,
 a:hover {
@@ -174,4 +176,8 @@ table {
 td,
 th {
 	padding: 0;
+}
+ul,
+ol {
+	list-style: none;
 }

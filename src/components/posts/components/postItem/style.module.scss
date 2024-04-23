@@ -28,6 +28,7 @@
 		.content_post {
 			max-width: 580px;
 			.post_text {
+				word-wrap: break-word;
 				line-height: 1.462;
 				font-size: 15px;
 				color: #fff;
